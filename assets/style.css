@@ -9,6 +9,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url("../assets/images/Background.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
 }
 
 header h1 {
