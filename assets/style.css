@@ -1,9 +1,14 @@
+:root {
+    
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*-- Header Style Section--*/
 header {
     padding: 10px 15px;
     display: flex;
@@ -76,9 +81,6 @@ body {
     font-size: 20px;
 }
 
-
-
-
 /* --About Me Section--*/
 
 .about-me {
@@ -108,6 +110,21 @@ body {
 }
 
 /* -- Work Section --*/
+
+.box-one img {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 10px 450px 0px 450px;
+    height: 300px;
+    width: 800px;
+    border: 4px solid #043927;
+}
+
+.box-two img {
+    margin-top: 20px;
+    height:200px;
+    width:350px;
+}
 
 /* -- Contact Me Section -- */
 
