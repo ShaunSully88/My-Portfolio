@@ -49,6 +49,10 @@ header nav ul li a {
     color: #b2beb5;
 }
 
+header nav ul li a:hover {
+    text-decoration: underline;    
+}
+
 body {
     background-color: #18453b;
     margin-top: 0px;
@@ -145,7 +149,12 @@ body {
     
 }
 
+.box-one img:hover {
+    opacity: 0.50;
+}
+
 .box-two img {
+    position: relative;
     margin-top: 40px;
     margin-left: 150px;
     margin-bottom: 25px;
@@ -158,6 +167,11 @@ body {
     border-bottom-right-radius: 15px;
     
 }
+
+.box-two img:hover {
+    opacity: 0.50;
+}
+
 
 .Applications {
     width:100%;
@@ -219,21 +233,19 @@ body {
    
 }
 
-/* Medi Queries for Smaller Screen Sizes */
+/* Medi Queries for Tablet Screen Sizes */
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:768px) {
 
     header h1 {
-      margin-left: 200px;
+      margin-left: 175px;
     }
 
-    header {
-        padding-left: 125px;
-    }
 
     header nav {
       margin-top: 20px;
       justify-content: space-evenly;
+
     }
 
     header nav ul {
@@ -243,6 +255,7 @@ body {
     }
     header nav ul li a {
         margin-left: 50px; 
+        font-size: 20px;
     }
 
     .section-header {
@@ -252,6 +265,10 @@ body {
         padding-left: 0;
     }
 
+    .about-me h1 {
+        margin-left:200px;
+    }
+
     .about-me p {
         
         text-align: center;
@@ -259,31 +276,103 @@ body {
     }
 
     .about-me img {
-        margin-left:100px;
+        margin-left:300px;
+    }
+
+    .work h1 {
+        margin-left: 250px;
+        margin-bottom:15px;
     }
 
     .box-one img {
         height:150px;
         width:500px;
-        margin-left: 250px;
+        margin-left: 150px;
     }
 
     .box-two img {
         height: 150px;
         width: 250px;
+        margin-left: 250px;
     }
     
     .Applications {
         justify-content: space-between;
     }
 
-    .contact-me h3 {
-        margin:15px 0;
+    .contact-me h1 {
+        margin-left: 180px;
     }
 
-    .contact-me ul {
-        margin-left: 0;
+    .contact-me p {
+        margin-left: 35px;
+    }
+
+    .contact-me ul li {
+        margin-left: 25px;
         margin-bottom: 20px;
     }
 
+}
+
+/* Media queries for Phone Screen Sizes */
+
+@media screen and (max-width: 575px) {
+
+header h1 {
+    font-size: 30px;
+}
+
+header nav ul li a {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.about-me h1{
+    font-size: 30px;
+    margin-left: 150px;
+}
+
+.about-me p {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top:10px;
+}
+
+.about-me img {
+    margin-left: 200px;
+}
+
+.work h1 {
+    font-size: 30px;
+    margin-left: 175px;
+}
+
+.box-one img {
+    height: 100px;
+    width: 300px;
+}
+
+.box-two img {
+    height: 100px;
+    width:200px;
+    margin-left: 200px;
+}
+
+.contact-me h1 {
+    font-size: 30px;
+    margin-left: 125px;
+}
+
+.contact-me p {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contact-me ul li, .contact-me ul li a {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
 }
