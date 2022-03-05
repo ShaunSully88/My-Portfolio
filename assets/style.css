@@ -233,7 +233,63 @@ body {
    
 }
 
-/* Medi Queries for Tablet Screen Sizes */
+/* Medi Queries for Smaller Screen Sizes */
+
+@media screen and (max-width:980px) {
+
+    .section-header {
+        border-right: none;
+    }
+
+    .about-me h1 {
+        text-decoration: underline;
+        border: none;
+        margin-left:350px;
+    }
+
+    .about-me img {
+        margin-left: 400px;
+    }
+
+    .work h1 {
+        text-decoration: underline;
+        margin-left:400px;
+
+    }
+
+    .box-one img {
+        margin-left: 100px;
+        height: 200px;
+        width:600
+    }
+
+    .box-two img {
+        margin-left: 350px;
+    }
+
+    .contact-me h1 {
+        margin-left: 350px;
+        text-decoration: underline;
+    }
+
+    .contact-me p {
+        margin-left: 200px;
+    }
+
+.contact-me ul {
+    margin-left: 150px;
+}
+
+    .contact-me ul li {
+        margin-left: 10px;
+        text-align: center;
+       
+    }
+
+    .contact-me ul li a {
+        margin-left: 10px;
+    }
+}
 
 @media screen and (max-width:768px) {
 
@@ -314,8 +370,6 @@ body {
     }
 
 }
-
-/* Media queries for Phone Screen Sizes */
 
 @media screen and (max-width: 575px) {
 
