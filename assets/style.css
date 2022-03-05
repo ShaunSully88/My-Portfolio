@@ -35,7 +35,7 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex-wrap: none;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
 }
@@ -54,7 +54,7 @@ body {
     margin-top: 0px;
 }
 
-.section-header {
+.section-header{
     text-align: start;
     font-size: 30px;
     color:#b2beb5;
@@ -62,6 +62,7 @@ body {
     padding-right: 20px;
     border-right: 4px solid #b2beb5;
     font-family: Rockwell;
+    display: inline;
 }
 
 /* -- Hero Section--*/
@@ -85,19 +86,25 @@ body {
 
 .about-me {
     display:flex;
-    justify-content: space-around;
     flex-wrap:wrap;
     text-align: start;
-    border-top: #043927 double 8px;
     border-bottom: #043927 double 8px;
     margin-top:0px;
     margin-bottom: 20px;
+}
+
+.about-me h1 {
+    margin-left: 50px;
 }
 
 .about-me p {
     color: #b2beb5;
     font-size: 20px;
     margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-family: Rockwell;
 }
 
@@ -111,47 +118,78 @@ body {
 
 /* -- Work Section --*/
 
+.work {
+    display:flex;
+    flex-wrap:wrap;
+    text-align: start;
+    border-bottom: #043927 double 8px;
+    margin-top:0px;
+    margin-bottom: 20px;
+}
+
+.work h1 {
+    margin-left: 150px;
+}
+
 .box-one img {
     display:flex;
     flex-wrap: wrap;
-    margin: 10px 450px 0px 450px;
+    margin-left: 300px;
     height: 300px;
     width: 800px;
     border: 4px solid #043927;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
 }
 
 .box-two img {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-bottom: 25px;
     height:200px;
     width:350px;
+    border: 4px solid #043927;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
 }
 
+.Applications {
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 /* -- Contact Me Section -- */
 
 .contact-me {
     display:flex;
-    justify-content: space-around;
     flex-wrap:wrap;
     text-align: start;
-    border-top: #043927 double 8px;
     border-bottom: #043927 double 8px;
     margin-top:0px;
     margin-bottom: 20px;
     
 }
 
-.contact-me h3 {
-    text-align: center;
-    color:#b2beb5;
-    font-family: Rockwell;
-    margin:10px 0 20px 150px;
+.contact-me h1 {
+    padding-left:5px;
 }
 
 .contact-me p {
+    text-align: center;
     color:#b2beb5;
-    font-size: 20px;
-    margin-top: 50px;
+    font-weight: bold;
+    font-size: 16px;
     font-family: Rockwell;
+    margin:10px 0 20px 150px;
 }
 
 .contact-me ul {
@@ -166,6 +204,7 @@ body {
 .contact-me ul li {
     display: inline;
     margin-top: 20px;
+    margin-left: 200px;
     color:#b2beb5;
     font-family: Rockwell;
     font-size: 20px;
@@ -178,4 +217,73 @@ body {
     margin-top: 50px;
     font-family: Rockwell;
    
+}
+
+/* Medi Queries for Smaller Screen Sizes */
+
+@media screen and (max-width:980px) {
+
+    header h1 {
+      margin-left: 200px;
+    }
+
+    header {
+        padding-left: 125px;
+    }
+
+    header nav {
+      margin-top: 20px;
+      justify-content: space-evenly;
+    }
+
+    header nav ul {
+        width: 100%;
+        flex-direction:row ;
+        flex-wrap: nowrap;
+    }
+    header nav ul li a {
+        margin-left: 50px; 
+    }
+
+    .section-header {
+        text-decoration:underline;
+        margin-left:75px;
+        border-right: none;
+        padding-left: 0;
+    }
+
+    .about-me p {
+        
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .about-me img {
+        margin-left:100px;
+    }
+
+    .box-one img {
+        height:150px;
+        width:500px;
+        margin-left: 250px;
+    }
+
+    .box-two img {
+        height: 150px;
+        width: 250px;
+    }
+    
+    .Applications {
+        justify-content: space-between;
+    }
+
+    .contact-me h3 {
+        margin:15px 0;
+    }
+
+    .contact-me ul {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
 }
