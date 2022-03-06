@@ -310,7 +310,7 @@ body {
         flex-wrap: nowrap;
     }
     header nav ul li a {
-        margin-left: 50px; 
+        margin-left: 60px; 
         font-size: 20px;
     }
 
@@ -342,14 +342,14 @@ body {
 
     .box-one img {
         height:150px;
-        width:500px;
-        margin-left: 150px;
+        width:400px;
+        margin-left: 200px;
     }
 
     .box-two img {
         height: 150px;
         width: 250px;
-        margin-left: 250px;
+        margin-left: 275px;
     }
     
     .Applications {
@@ -364,10 +364,16 @@ body {
         margin-left: 35px;
     }
 
+    .contact-me ul {
+        margin-left: 10px;
+    }
+
     .contact-me ul li {
-        margin-left: 25px;
+        margin-left: 10px;
         margin-bottom: 20px;
     }
+
+    
 
 }
 
